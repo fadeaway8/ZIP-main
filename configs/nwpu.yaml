@@ -1,0 +1,34 @@
+metadata:
+  name: NWPU
+  description: Training configuration on the NWPU dataset.
+
+input_size: 672
+block_size: 16
+batch_size: 8
+num_crops: 1
+
+aug_min_scale: 0.75
+aug_max_scale: 2.0
+aug_brightness: 0.2
+aug_contrast: 0.2
+aug_saturation: 0.15
+aug_hue: 0.0
+aug_kernel_size: 5
+aug_blur_prob: 0.2
+aug_saltiness: 0.001
+aug_spiciness: 0.001
+
+lr: 0.0001
+vpt_lr: 0.0001
+adapter_lr: 0.0001
+lora_lr: 0.0001
+backbone_lr: 0.0001
+
+weight_decay: 0.0001
+vpt_weight_decay: 0.0001
+adapter_weight_decay: 0.0001
+lora_weight_decay: 0.0001
+backbone_weight_decay: 0.0001
+
+eval_freq: 1.0
+eval_start: 100
